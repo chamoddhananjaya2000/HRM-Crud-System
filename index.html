@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRM Login Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>HRM Login</h1>
+        <form class="login-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group password-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()">
+                    <img src="visible eye.png" alt="Show Password" id="eye-icon">
+                </span>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+        <p class="role-info">Login as <strong>Admin</strong> | <strong>Manager</strong> | <strong>Employee</strong></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
